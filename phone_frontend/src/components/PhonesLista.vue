@@ -159,7 +159,7 @@
     },
     editRegister () {
         this.dialog = false
-        let baseURI = 'http://localhost:8000/api/v1/phones/'+ this.register.id
+        let baseURI = 'http://localhost:8000/api/v1/phones/'+ this.register.id + '/'
           this.$http.put(baseURI,this.register)
           .then((result) => {
             console.log(result)
