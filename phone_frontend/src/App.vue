@@ -2,7 +2,7 @@
   <v-app id="inspire">
     <v-app-bar
       app
-      color="white"
+      color="blue lighten-1"
       flat
     >
       <v-container class="py-0 fill-height">
@@ -41,7 +41,7 @@
             <v-sheet rounded="lg">
               <v-list color="transparent">
                 <v-list-item
-                  v-for="n in 5"
+                  v-for="n in 3"
                   :key="n"
                   link
                 >
@@ -73,6 +73,9 @@
               min-height="70vh"
               rounded="lg"
             >
+            <div>
+              <phones-list/>
+            </div>
               <!--  -->
             </v-sheet>
           </v-col>
@@ -83,13 +86,16 @@
 </template>
 
 <script>
+import PhonesList from '@/components/PhonesList.vue'
+
   export default {
+    components: {
+      PhonesList
+    },
     data: () => ({
       links: [
         'Dashboard',
-        'Messages',
-        'Profile',
-        'Updates',
+        'Messages'
       ],
     }),
   }
