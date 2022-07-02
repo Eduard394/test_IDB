@@ -150,12 +150,8 @@
             this.contacts = result.data
           })
       },
-      onButtonClick(item){
-          console.log(item)
-      },
       editTutorial(item) {
         this.register = item
-        console.log(item)
         this.dialog = true
     },
     removeAllTutorials() {
@@ -169,6 +165,9 @@
             console.log(result)
           })
       },
+      updateList () {
+          this.getPhones()
+      }
     }
   }
 </script>

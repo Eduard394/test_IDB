@@ -85,7 +85,7 @@
     
     <div>
       <v-divider class="pa-6" v-show="false"></v-divider>
-      <table-list/>
+      <table-list ref="lista"/>
     </div>
   </div>
 </template>
@@ -142,6 +142,7 @@ import TableList from './PhonesLista.vue'
           .then((result) => {
             console.log(result)
           })
+          this.$refs.lista.updateList();
       },
       validateData () {
         if(this.register.first_name == ''){
