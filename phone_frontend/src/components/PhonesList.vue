@@ -68,10 +68,10 @@
         </v-dialog>
         <v-row justify="start" class="mr-4">
           <v-card-text>
-            <div class="text-h6 pa-1">Contacts</div>
+            <div class="text-h6 pa-1">.</div>
           </v-card-text>
         </v-row>
-        <v-row justify="end" class="mr-4 mt-1">
+        <v-row justify="end" class="mr-9 mt-1">
           <v-btn
             color="primary"
             dark
