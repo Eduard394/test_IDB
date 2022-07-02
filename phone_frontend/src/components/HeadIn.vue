@@ -11,7 +11,7 @@
     <v-img
       :aspect-ratio="16/9"
       :width="width"
-      src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
+      src="@/assets/contacts.png"
     ></v-img>
   </div>
 </template>
@@ -19,7 +19,7 @@
 <script>
   export default {
     data: () => ({
-      width: 300,
+      width: 600,
     }),
   }
 </script>
